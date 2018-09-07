@@ -1,0 +1,19 @@
+<div>
+    This is the home component
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="stu in $ctrl.students">
+                <td>{{stu.name}}</td>
+                <td>
+                    <a ui-sref="stuDetails({studentId: stu.id})">View Details</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
